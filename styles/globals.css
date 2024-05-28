@@ -1,0 +1,191 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body {
+  overflow-x: hidden;
+}
+
+.bg-gradient {
+  background: hsla(281, 64%, 44%, 1);
+  background: linear-gradient(90deg, hsla(281, 64%, 44%, 1) 9%, hsla(302, 82%, 76%, 1) 100%);
+  background: -moz-linear-gradient(90deg, hsla(281, 64%, 44%, 1) 9%, hsla(302, 82%, 76%, 1) 100%);
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(281, 64%, 44%, 1) 9%,
+    hsla(302, 82%, 76%, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8A28B8", endColorstr="#F492F0", GradientType=1);
+}
+
+.readable-text {
+  color: #2b1d3f;
+}
+
+a.link {
+  color: #2e2e3a;
+}
+
+a.link:hover {
+  color: #6941c6;
+  text-decoration: none;
+}
+
+.search-input {
+  background: #f2f3f7;
+  border: 2px solid #f2f3f7;
+  transition: border-color 0.3s;
+}
+
+.search-input:focus {
+  border-color: #6941c6;
+  outline: none;
+}
+
+.bg-switch-gradient-light {
+  background: linear-gradient(180deg, #66ffed 0%, #ffeeb2 100%);
+  background-image: url('../public/images/switches/switch-body-light.png');
+  background-size: cover;
+}
+
+.bg-switch-gradient-dark {
+  background: linear-gradient(183.67deg, #2b4485 6.6%, #afcaff 96.98%);
+  background-image: url('../public/images/switches/switch-body-dark.png');
+  background-size: cover;
+}
+
+.switch-color-light {
+  background: linear-gradient(180deg, #ffc123 0%, #f8832e 100%);
+  filter: drop-shadow(-2px 1px 6px rgba(0, 0, 0, 0.25));
+}
+
+.switch-color-dark {
+  background: linear-gradient(180deg, #d6e9ff 0%, #cde4ff 100%);
+}
+
+.switch-decoration {
+  max-width: none;
+  width: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.switch-decoration-dark {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(180deg, #cee5ff 0%, #edf6ff 99.99%, #f1f9ff 100%);
+  border-radius: 100%;
+}
+
+.bg-card {
+  background: linear-gradient(112.93deg, #25262d 5.08%, #000000 55.1%, #2c2f34 100%);
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198),
+    0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035),
+    0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725),
+    0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
+}
+
+.bg-hero-gradient-1 {
+  position: absolute;
+  z-index: -1;
+  top: -55px;
+  left: 0;
+  width: 50vw;
+  height: 50vw;
+  opacity: 0.9;
+  background: radial-gradient(
+    67.22% 50% at 50% 50%,
+    rgba(51, 231, 255, 0.15) 0%,
+    rgba(245, 228, 255, 0) 75%
+  );
+}
+
+.bg-hero-gradient-2 {
+  position: absolute;
+  z-index: -1;
+  bottom: -25vw;
+  right: 5vw;
+  width: 50vw;
+  height: 50vw;
+  opacity: 0.9;
+  background: radial-gradient(
+    67.22% 50% at 50% 50%,
+    rgba(255, 100, 51, 0.15) 0%,
+    rgba(245, 228, 255, 0) 75%
+  );
+}
+
+@media (max-width: 880px) {
+  .header-hide {
+    display: none;
+  }
+}
+
+@media (min-width: 881px) {
+  .mobile-menu-hide {
+    display: none;
+  }
+}
+
+@media (max-width: 1350px) {
+  .categories-hide {
+    display: none;
+  }
+}
+
+@media (max-width: 1349px) {
+  .categories-visible {
+    display: flex;
+    max-width: calc(100% - 187px);
+  }
+}
+
+@media (max-width: 768px) {
+  .categories-visible {
+    max-width: initial;
+  }
+}
+
+@media (max-width: 992px) {
+  .currency-card {
+    width: 74%;
+    max-width: 724px;
+  }
+
+  .cards-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 564px) {
+  .currency-card {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .currency-card {
+    width: 246px;
+    height: 180px !important;
+  }
+
+  .currency-info {
+    max-width: 786px;
+  }
+}
+
+@media (min-width: 1450px) {
+  .currency-card {
+    width: 346px;
+    height: 220px !important;
+  }
+
+  .currency-info {
+    max-width: 1086px;
+  }
+}
